@@ -7,19 +7,23 @@
 Este repositorio a sido dreado con el fin de documentar mi avanse y manejo de los arboles en la estructura de datos, con el fin de usar como referensias y mantener actualizados mis conosimientos, concluyendo con un metodo final el cual sera elaborado a base de lo aprendidio en este camino.
 
 ## Estructura de basica repositorio
-<!-- Provisional porque se a de restructurar -->
+<!-- ya estructura final -->
+```
 practicas-de-Arboles---Trabajo-de-aprendizaje/                
-├── bin/Debug/net8.0/                
-├── obj/                  
+├── bin/            
+├── docs/            # Documentos        
+│   └── Reporte-de-practicas.md                    
+├── obj/                   
 │   └── Debug/net8.0/               
 │   │   ├── ref/          
 │   │   └── refint/          
-├── Arbol.cs          #Lugar donde se lleva acabo la creacion del arbol  
-├── Arboles.csproj           
-├── Arboles.sln            
-├── Nodo.cs        #Responsable de brindar la estructura del nodo raiz   
-├── Program.cs    #estructura para interactura entre los programas y el ususario          
+├── src/                       
+│   ├── Arboles.CLI         # hogar del main para interactuar     
+│   └── Arboles.CORE    # logica del proyecto
+├── Arboles.sln      
+├── .travis.yml         # Trabajo de CI
 └── README.md               
+```
 
 ## metodos incorporados
 - Creacion del arbol (nodo raiz)
