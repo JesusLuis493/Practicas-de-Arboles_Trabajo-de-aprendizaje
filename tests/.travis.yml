@@ -1,0 +1,17 @@
+language: csharp
+dotnet: 8.0
+os: linux
+dist: focal
+
+branches:
+  only:
+    - main
+
+before_install:
+  - sudo apt-get update
+
+script:
+  - dotnet restore
+  - dotnet build Arboles.sln 
+  - dotnet test 
+  - dotnet run --project src/Arboles.CLI
