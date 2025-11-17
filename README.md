@@ -9,7 +9,7 @@ Este repositorio a sido dreado con el fin de documentar mi avanse y manejo de lo
 ## Estructura de basica repositorio
 <!-- ya estructura final -->
 ```
-practicas-de-Arboles---Trabajo-de-aprendizaje/                
+practicas-de-Arboles_Trabajo-de-aprendizaje/                
 ├── bin/            
 ├── docs/            # Documentos        
 │   └── Reporte-de-practicas.md                    
