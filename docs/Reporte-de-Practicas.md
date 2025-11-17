@@ -10,13 +10,19 @@ composision de nodos y aristas.
 
 Un punto importante a resaltar es que los nodos de los arboles, aparte de tener todos una clasificasion espesifica, estan compuesto de manera diferente, teniendo estos dos o mas partes para el apuntador en lugar de una como en las listas.
 
-## Indice
-Program.cs
-└── main                <!--para poder crear un nuevo arbol-->
-Nodo.cs
-└── Internal class nodo <!--estructura basica del nodo-->
-Arbol.cs
-└── Metodo Craer arbol  <!--metodo para llevar acabo la creacion del arbol-->
+## Indice                           
+Program.cs/      <!-- intermediario para interactura y mostrar -->                                         
+└── main                <!--para poder crear un nuevo arbol-->                         
+Nodo.cs/     <!-- nodo -->                                             
+└── Internal class nodo <!--estructura basica del nodo-->                        
+Arbol.cs/       <!-- Metodos -->                                        
+├── Metodo Craer arbol  <!--metodo para llevar acabo la creacion del arbol-->                              
+├── Recorrido preorden                                        
+├── Recorrido inorden                                    
+├── Recorrido posorden                                       
+├── Buscar un elemento en el arbol                              
+├── Contar elementos del arbol                                      
+└── Ejercicio personal de arboles                                       
 
 ## Codigos
 - [Main](src/Arboles.CLI/Program.cs)
