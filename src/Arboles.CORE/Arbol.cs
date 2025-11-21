@@ -63,4 +63,50 @@ internal class Arbol
             Console.WriteLine(apnodo.info);
         }
     }
+
+    //bucar un elemento del arbol
+    public Nodo bucar (cahr x)
+    {
+        Console.WriteLine("[Ingrese el elemento a buscar]");
+        x = char.Parse(Console.ReadLine());
+        if (apnodo != null)
+        {
+            if (apnodo.info == x)
+            {
+                Console.WriteLine("[Elemento {0} encontrado]", x);
+                return apnodo;
+            }
+            else
+            {
+                bucar(apnodo.izq);
+                bucar(apnodo.der);
+            }
+        }
+    }
+
+    //bucar elementos del arbol
+    public void Contar ()
+    {
+        contador=0;
+        if (apnodo != null)
+        {
+            postorden(apnodo.izq);
+            postorden(apnodo.der);
+            Console.WriteLine(apnodo.info);
+            contador++;
+        }
+
+        Console.WriteLine("[El arbol tiene {0} elementos]", contador);
+    }
+
+    //Mostrar arbol de forma grafica
+    public void MostrarArbol(Nodo apnodo, int level=0)
+    {
+        if (apnodo != null)
+        {
+            MostrarArbol(apnodo.der, level + 1);
+            Console.WriteLine(new string(' ', 4 * level) + apnodo.info);
+            MostrarArbol(apnodo.izq, level + 1);
+        }
+    }
 }

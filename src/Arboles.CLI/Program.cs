@@ -13,8 +13,8 @@
             Console.WriteLine("[2. Recorrido en preorden]");
             Console.WriteLine("[3. Recorrido en inorden]");
             Console.WriteLine("[4. Recorrido en postorden]");
-            Console.WriteLine("[5. Opcion pendite]");
-            Console.WriteLine("[6. Opcion pendite]");
+            Console.WriteLine("[5. Buscar un elemento del arbol]");
+            Console.WriteLine("[6. Contar elementos del arbol]");
             Console.WriteLine("[7. Opcion pendite]");
             Console.WriteLine("[8. Salir del programa]");
             opc = int.Parse(Console.ReadLine());
@@ -34,6 +34,14 @@
                 case 4:
                     Console.WriteLine("[Recorrido en postorden]");
                     arbolito.postorden(raiz);
+                    break;
+                case 5:
+                    Console.WriteLine("[Buscar un elemento del arbol]");
+                    arbolito.bucar(raiz);
+                    break;
+                case 6:
+                    Console.WriteLine("[Contar elementos del arbol]");
+                    arbolito.Contar();
                     break;
                 case 8:
                     Console.WriteLine("[Saliendo del programa]");
