@@ -46,6 +46,9 @@ en la terminal, esto con el fin de primero revisar si todo funciona dentro del c
 dotnet build
 dotnet run
 ```
+
+***NOTA*** : Se deve de estar situado en la ubicasion del archivo [Arboles.csproj](src/Arboles.CORE/Arboles.csproj) para asegurar que corra, ya que en dicha carpeta se situa la logica del proyecto.
+
 --- 
 
 ### Notas a tener en cuenta
