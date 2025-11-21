@@ -37,7 +37,7 @@
                     break;
                 case 5:
                     Console.WriteLine("[Buscar un elemento del arbol]");
-                    arbolito.bucar(raiz);
+                    arbolito.buscar(raiz.info, raiz);
                     break;
                 case 6:
                     Console.WriteLine("[Contar elementos del arbol]");
