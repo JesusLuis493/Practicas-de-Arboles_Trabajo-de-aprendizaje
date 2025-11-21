@@ -102,11 +102,36 @@ internal class Arbol
     //Mostrar arbol de forma grafica
     public void MostrarArbol(Nodo apnodo, int level=0)
     {
-        if (apnodo != null)
+        //verificar si el arbol tiene algo que mostrar
+        if (apnodo == null)
+        {
+            Console.WriteLine("[El arbol esta vacio]");
+            return;
+        }
+
+        //recorrer por la derecha del arbol
+        if (apnodo.der != null)
         {
             MostrarArbol(apnodo.der, level + 1);
+            Console.WriteLine(new string(' ', 4 * level) + " /");
+        }
+        //mostrar el nodo actual
+        if (apnodo != null)
+        {
             Console.WriteLine(new string(' ', 4 * level) + apnodo.info);
+        }
+        //recorrer por la izquierda del arbol
+        if (apnodo.izq != null)
+        {
+            Console.WriteLine(new string(' ', 4 * level) + " \\");
             MostrarArbol(apnodo.izq, level + 1);
         }
+
     }
 }
+
+        15
+       /
+    12
+       \
+        10
