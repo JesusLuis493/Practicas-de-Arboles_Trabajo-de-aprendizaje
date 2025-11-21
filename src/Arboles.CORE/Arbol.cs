@@ -65,7 +65,7 @@ internal class Arbol
     }
 
     //bucar un elemento del arbol
-    public Nodo bucar (cahr x)
+    public void buscar (char x, Nodo apnodo)
     {
         Console.WriteLine("[Ingrese el elemento a buscar]");
         x = char.Parse(Console.ReadLine());
@@ -74,20 +74,19 @@ internal class Arbol
             if (apnodo.info == x)
             {
                 Console.WriteLine("[Elemento {0} encontrado]", x);
-                return apnodo;
             }
             else
             {
-                bucar(apnodo.izq);
-                bucar(apnodo.der);
+                buscar(x, apnodo.izq);
+                buscar(x, apnodo.der);
             }
         }
     }
 
-    //bucar elementos del arbol
-    public void Contar ()
+    //contar elementos del arbol
+    public void Contar (Nodo apnodo)
     {
-        contador=0;
+        int contador = 0;
         if (apnodo != null)
         {
             postorden(apnodo.izq);
@@ -129,9 +128,3 @@ internal class Arbol
 
     }
 }
-
-        15
-       /
-    12
-       \
-        10
