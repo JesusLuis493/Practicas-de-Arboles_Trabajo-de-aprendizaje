@@ -15,7 +15,7 @@
             Console.WriteLine("[4. Recorrido en postorden]");
             Console.WriteLine("[5. Buscar un elemento del arbol]");
             Console.WriteLine("[6. Contar elementos del arbol]");
-            Console.WriteLine("[7. Opcion pendite]");
+            Console.WriteLine("[7. Mostrar arbol de forma grafica]");
             Console.WriteLine("[8. Salir del programa]");
             opc = int.Parse(Console.ReadLine());
             switch (opc)
@@ -42,6 +42,10 @@
                 case 6:
                     Console.WriteLine("[Contar elementos del arbol]");
                     arbolito.Contar();
+                    break;
+                case 7:
+                    Console.WriteLine("[Mostrar arbol de forma grafica]");
+                    arbolito.MostrarArbol(raiz);
                     break;
                 case 8:
                     Console.WriteLine("[Saliendo del programa]");
