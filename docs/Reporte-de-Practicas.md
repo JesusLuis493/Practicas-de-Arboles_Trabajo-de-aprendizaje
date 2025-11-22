@@ -32,3 +32,6 @@ Arbol.cs/       <!-- Metodos -->
 ## Capturas de pantalla
 Para fines practicos y no saturar el archivo se cargaran los resultados de los test en este apartado,
 sin dejar de lado la posibilidad de algunas imagenes a manera de demostracion con fines de presentacion. 
+
+<img width="1191" height="990" alt="Captura desde 2025-11-22 16-15-44" src="https://github.com/user-attachments/assets/ef7c61d2-41ce-4ce2-955d-37f3f8a26aff" />
+<img width="1191" height="990" alt="Captura desde 2025-11-22 16-15-59" src="https://github.com/user-attachments/assets/02d53b7e-e315-4e46-b133-7631983602bb" />
