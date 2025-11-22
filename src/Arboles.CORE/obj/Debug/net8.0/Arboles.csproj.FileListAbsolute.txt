@@ -1,11 +1,11 @@
+/home/jesus-luis/Arboles/src/Arboles.CORE/bin/Debug/net8.0/Arboles.deps.json
+/home/jesus-luis/Arboles/src/Arboles.CORE/bin/Debug/net8.0/Arboles.dll
+/home/jesus-luis/Arboles/src/Arboles.CORE/bin/Debug/net8.0/Arboles.pdb
 /home/jesus-luis/Arboles/src/Arboles.CORE/obj/Debug/net8.0/Arboles.GeneratedMSBuildEditorConfig.editorconfig
 /home/jesus-luis/Arboles/src/Arboles.CORE/obj/Debug/net8.0/Arboles.AssemblyInfoInputs.cache
 /home/jesus-luis/Arboles/src/Arboles.CORE/obj/Debug/net8.0/Arboles.AssemblyInfo.cs
 /home/jesus-luis/Arboles/src/Arboles.CORE/obj/Debug/net8.0/Arboles.csproj.CoreCompileInputs.cache
 /home/jesus-luis/Arboles/src/Arboles.CORE/obj/Debug/net8.0/Arboles.sourcelink.json
-/home/jesus-luis/Arboles/src/Arboles.CORE/bin/Debug/net8.0/Arboles.deps.json
-/home/jesus-luis/Arboles/src/Arboles.CORE/bin/Debug/net8.0/Arboles.dll
-/home/jesus-luis/Arboles/src/Arboles.CORE/bin/Debug/net8.0/Arboles.pdb
 /home/jesus-luis/Arboles/src/Arboles.CORE/obj/Debug/net8.0/Arboles.dll
 /home/jesus-luis/Arboles/src/Arboles.CORE/obj/Debug/net8.0/refint/Arboles.dll
 /home/jesus-luis/Arboles/src/Arboles.CORE/obj/Debug/net8.0/Arboles.pdb

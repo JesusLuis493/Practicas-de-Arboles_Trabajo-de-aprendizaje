@@ -1,6 +1,9 @@
-internal class Nodo
+namespace Arboles.Core
 {
-    public Nodo izq;
-    public Nodo der;
-    public char info;
+    public class Nodo
+    {
+        public Nodo izq;
+        public Nodo der;
+        public char info;
+    }
 }

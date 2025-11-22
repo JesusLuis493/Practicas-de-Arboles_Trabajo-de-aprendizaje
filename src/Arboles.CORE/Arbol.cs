@@ -1,6 +1,9 @@
 using System.Linq.Expressions;
-internal class Arbol
+
+namespace Arboles.Core
 {
+    public class Arbol
+    {
     public void crear_arbol(Nodo apnodo)
     {
         char res;
@@ -64,38 +67,45 @@ internal class Arbol
         }
     }
 
-    //bucar un elemento del arbol
-    public void buscar (char x, Nodo apnodo)
+    //buscar un elemento del arbol
+    public void buscar(Nodo apnodo)
     {
-        Console.WriteLine("[Ingrese el elemento a buscar]");
-        x = char.Parse(Console.ReadLine());
-        if (apnodo != null)
+        if (apnodo == null)
         {
-            if (apnodo.info == x)
-            {
-                Console.WriteLine("[Elemento {0} encontrado]", x);
-            }
-            else
-            {
-                buscar(x, apnodo.izq);
-                buscar(x, apnodo.der);
-            }
+            Console.WriteLine("[El arbol esta vacio]");
+            return;
         }
+
+        Console.WriteLine("[Ingrese el elemento a buscar]");
+        if (!char.TryParse(Console.ReadLine(), out char x))
+        {
+            Console.WriteLine("[Entrada no valida]");
+            return;
+        }
+
+        if (BuscarRec(apnodo, x))
+            Console.WriteLine("[Elemento {0} encontrado]", x);
+        else
+            Console.WriteLine("[Elemento {0} no encontrado]", x);
+    }
+
+    private bool BuscarRec(Nodo nodo, char x)
+    {
+        if (nodo == null) return false;
+        if (nodo.info == x) return true;
+        return BuscarRec(nodo.izq, x) || BuscarRec(nodo.der, x);
     }
 
     //contar elementos del arbol
-    public void Contar (Nodo apnodo)
+    public int Contar(Nodo apnodo)
     {
-        int contador = 0;
-        if (apnodo != null)
-        {
-            postorden(apnodo.izq);
-            postorden(apnodo.der);
-            Console.WriteLine(apnodo.info);
-            contador++;
-        }
+        return ContarRec(apnodo);
+    }
 
-        Console.WriteLine("[El arbol tiene {0} elementos]", contador);
+    private int ContarRec(Nodo nodo)
+    {
+        if (nodo == null) return 0;
+        return 1 + ContarRec(nodo.izq) + ContarRec(nodo.der);
     }
 
     //Mostrar arbol de forma grafica
@@ -127,4 +137,5 @@ internal class Arbol
         }
 
     }
+}
 }

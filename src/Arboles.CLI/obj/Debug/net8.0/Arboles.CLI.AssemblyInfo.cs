@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arboles.CLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6ef9666fc7be2877c80bf4536543d3bbd900cb0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f7c567cc9c32322a079364039687c878f10e965")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arboles.CLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arboles.CLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
