@@ -6,7 +6,7 @@
 </p>
 Este repositorio a sido dreado con el fin de documentar mi avanse y manejo de los arboles en la estructura de datos, con el fin de usar como referensias y mantener actualizados mis conosimientos, concluyendo con un metodo final el cual sera elaborado a base de lo aprendidio en este camino.
 
-## Estructura de basica repositorio
+## Estructura base del repositorio
 <!-- ya estructura final -->
 ```
 practicas-de-Arboles_Trabajo-de-aprendizaje/
@@ -17,8 +17,8 @@ practicas-de-Arboles_Trabajo-de-aprendizaje/
 │   └── Reporte-de-practicas.md                    
 ├── obj/                   
 │   └── Debug/net8.0/               
-│   │   ├── ref/          
-│   │   └── refint/          
+│      ├── ref/          
+│      └── refint/          
 ├── src/                       
 │   ├── Arboles.CLI         # hogar del main para interactuar     
 │   └── Arboles.CORE    # logica del proyecto
